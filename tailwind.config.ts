@@ -12,6 +12,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: { typewriter: "typewriter 1.5s steps(11) forwards" },
+      keyframes: { typewriter: { to: { left: "100%" } } },
     },
   },
   plugins: [],
