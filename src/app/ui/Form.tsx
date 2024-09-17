@@ -53,7 +53,6 @@ export default function Form() {
   const { height, width } = useWindowSize();
 
   useEffect(() => {
-    console.log({ state });
     if (!state.isSpam && state.success) setShowConfetti(true);
   }, [state]);
 

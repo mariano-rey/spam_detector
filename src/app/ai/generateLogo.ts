@@ -22,7 +22,6 @@ export async function generateLogo(): Promise<Response> {
       headers,
       method: "POST",
       body: JSON.stringify(input),
-      next: { revalidate: 60 },
     });
 
     const imageBase64 = Buffer.from(await response.arrayBuffer()).toString(
